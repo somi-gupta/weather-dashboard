@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-header purple w-100 p-4 text-center">
+        <h1 class="text-white">Weather Dashboard</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-start">
+            <div class="col-2 location-engine">
+                <h2 class="my-1">Search for a City:</h2>
+                <div class="input-group mb-3 ">
+                <input id="search-city" type="text" class="form-control" placeholder="Enter City name" aria-label="Enter City name">
+                <div class="input-group-append">
+                <button class="btn btn-primary search-button" type="button"> <i class="fas fa-search"></i></button>
+            </div>
+            </div>
+            <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
