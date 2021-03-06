@@ -13,25 +13,69 @@
 </head>
 
 <body>
-    <div class="page-header purple w-100 p-4 text-center">
+    <div class="page-header color w-100 p-4 text-center">
         <h1 class="text-white">Weather Dashboard</h1>
     </div>
     <div class="container-fluid">
-        <div class="row justify-content-start">
-            <div class="col-2 location-engine">
+        <div class="row">
+            <div class="col-2 location-engine bg-light">
                 <h2 class="my-1">Search for a City:</h2>
                 <div class="input-group mb-3 ">
-                <input id="search-city" type="text" class="form-control" placeholder="Enter City name" aria-label="Enter City name">
-                <div class="input-group-append">
-                <button class="btn btn-primary search-button" type="button"> <i class="fas fa-search"></i></button>
+                    <input id="search-city" type="text" class="form-control" placeholder="Enter City name"
+                        aria-label="Enter City name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" id="search-button" type="button"> <i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button> -->
             </div>
+            <div class="col-8 city-details">
+                <div class="row">
+                    <div class="col-8 border border-dark m-3 rounded">
+                        <h1 class="city-name"></h1>
+                        <p class="current-date"></p>
+                        <img class="current-img">
+                        <div class="row p-1">
+                            <h2 class="temperature"></h2>
+                        </div>
+                        <div class="row p-1">
+                            <h2 class="humidity"></h2>
+                        </div>
+                        <div class="row p-1">
+                            <h2 class="wind-speed"></h2>
+                        </div>
+                        <div class="row p-1">
+                            <h2 class="uv-index"></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <h3>5 Day Forecast:</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                    </div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded">
+                    </div>
+                </div>
+
             </div>
-            <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
 
         </div>
     </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
