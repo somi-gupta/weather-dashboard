@@ -1,5 +1,5 @@
 # Description
-weather-dashboard
+Weather-Dashboard is an application to find a weather condition of a given location(city, state or zip code) current and 5-Days forecast. API used to get data is Open Weather APi.
 
 
 # Installation
@@ -24,6 +24,9 @@ Code language used
 - bootStrap library
 - Moment.js library
 - jqyery
+
+# Deployed application link
+Please navigate to the application via: https://somi-gupta.github.io/weather-dashboard/.
 
 # Screenshot of the deployed application
 ![Weather Dashboard](./assets/images/application-screenshot.jpg?raw=true)
