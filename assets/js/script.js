@@ -53,7 +53,7 @@ function searchCity(location) {
 
 //Function call to get the uv index values based on latitude and logitude
 function uvIndexDetails(lat, lon) {
-  var requestUrl = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=" + key;
+  var requestUrl = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=" + key;
 
   fetch(requestUrl)
     .then(function (response) {
