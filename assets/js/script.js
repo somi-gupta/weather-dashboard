@@ -25,8 +25,7 @@ var formSubmitHandler = function (event) {
 
 //function call to get the current day weather based on the search input
 function searchCity(location) {
-  // const APIKey = "461d4e8ca0c700411cc91d0030c17356";
-  var requestUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + key;
+  var requestUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + key;
 
   fetch(requestUrl)
     .then(function (response) {
@@ -83,7 +82,7 @@ function uvIndexDetails(lat, lon) {
 
 //Function call to get the 5 day weather reports
 function fiveDayForcast(location) {
-  var requestUrl = "http://api.openweathermap.org/data/2.5/forecast?q=" + location + "&appid=" + key;
+  var requestUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&appid=" + key;
 
   fetch(requestUrl)
     .then(function (response) {
